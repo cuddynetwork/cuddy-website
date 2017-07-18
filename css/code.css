@@ -1,20 +1,9 @@
 
-/* Our normalize css */
-*{
-  margin:0;
-  box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 /* Our wrapper */
 .wrapper{
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 375px;
   max-height:100vh;
   transform:translate3d(0%,0%,0);
   overflow:hidden;
@@ -23,11 +12,11 @@
 
 
 /* Our image information */
-.bottom,
-.middle,
-.top {
-  width:400px;
-  height:400px;
+.bottom-code,
+.middle-code,
+.top-code {
+  width:600px;
+  height:375px;
   background-repeat:no-repeat;
   background-color: white;
   background-size: cover;
@@ -38,7 +27,7 @@
   pointer-events:none;
   overflow: hidden;
   &>img{
-    height:400px;
+    height:375px;
   }
 }
 

@@ -9,7 +9,7 @@ let scrollerTop = document.querySelector('.scroller-top');
 // First we'll have to set up our event listeners
 // We want to watch for clicks on our scroller
 scrollerMiddle.addEventListener('mousedown',function(){
-  active = "middle";
+  active = "middle-code";
   // Add our scrolling class so the scroller has full opacity while active
   scrollerMiddle.classList.add('scrolling');
 });
@@ -26,7 +26,7 @@ document.body.addEventListener('mouseleave',function(){
 });
 // We'll have to do the same for our top scroller
 scrollerTop.addEventListener('mousedown',function(){
-    active = "top";
+    active = "top-code";
     scrollerTop.classList.add('scrolling');
 });
 document.body.addEventListener('mouseup',function(){
@@ -56,22 +56,22 @@ function scrollIt(x){
   // we show all our bottom image but how much of our middle and top,
   // that'll depend on what we're dragging
   // if we're dragging the middle slider
-  if (active==="middle"){
-    document.querySelector('.middle').style.width = transform+"px";
+  if (active==="middle-code"){
+    document.querySelector('.middle-code').style.width = transform+"px";
     scrollerMiddle.style.left = transform-25+"px";
     // if we're using scroller-middle, middle must always be to the right of top
     if (scrollerTop.getBoundingClientRect().left>scrollerMiddle.getBoundingClientRect().left-5){
-      document.querySelector('.top').style.width = transform-5+"px";
+      document.querySelector('.top-code').style.width = transform-5+"px";
       scrollerTop.style.left = transform-30+"px";
     }
   }
   // if we're dragging the top slider
-  if (active==="top"){
-    document.querySelector('.top').style.width = transform+"px";
+  if (active==="top-code"){
+    document.querySelector('.top-code').style.width = transform+"px";
     scrollerTop.style.left = transform-25+"px";
     // if we're using scroller-top, top must always be to the left
     if (scrollerTop.getBoundingClientRect().left>scrollerMiddle.getBoundingClientRect().left-5){
-      document.querySelector('.middle').style.width = transform+5+"px";
+      document.querySelector('.middle-code').style.width = transform+5+"px";
       scrollerMiddle.style.left = transform-20+"px";
     }
   }
@@ -79,10 +79,10 @@ function scrollIt(x){
 
 // Let's set our opening state based off the width, 
 // we want to show a bit of both images so the user can see what's going on
-active = "middle";
-scrollIt(320);
-active = "top";
-scrollIt(230);
+active = "middle-code";
+scrollIt(500);
+active = "top-code";
+scrollIt(300);
 active = false;
 
 
