@@ -97,17 +97,17 @@
 
 /* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
 .scroller-middle>.scroller__thumb{
-  border: 5px solid #FFCCBC;
+  border: 5px solid #8d7fff;
 }
 .scroller-middle:before,
 .scroller-middle:after{
-  background: #FFCCBC;
+  background: #8d7fff;
 }
 
 .scroller-top>.scroller__thumb{
-  border: 5px solid #FFAB91;
+  border: 5px solid #8d7fff;
 }
 .scroller-top:before,
 .scroller-top:after{
-  background: #FFAB91;
+  background: #8d7fff;
 }
